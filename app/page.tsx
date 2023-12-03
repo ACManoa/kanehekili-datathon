@@ -28,7 +28,7 @@ function Gradient({
 
 const LINKS = [
   {
-    title: "Acm Manoa",
+    title: "ACM Manoa",
     href: "https://acmmanoa.org/",
     description: "Visit the Official Acm Manoa Website",
   },
@@ -43,10 +43,9 @@ const LINKS = [
     description: "See previous pictures of datathon",
   },
   {
-    title: "Join us!",
+    title: "Sign Up!",
     href: "https://acmmanoa.org/",
-    description:
-      "Fill out the form and join datathon!",
+    description: "Fill out the Eventbrite form and join datathon!",
   },
 ];
 

@@ -6,6 +6,14 @@
     padding: 6rem;
     min-height: 100vh;
   }
+
+  .infomain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6rem;
+    min-height: 100vh;
+  }
   
   .vercelLogo {
     filter: invert(1);
@@ -20,6 +28,26 @@
     width: 100%;
     z-index: 2;
     font-family: var(--font-mono);
+  }
+
+  .descriptionright {
+    display: inherit;
+    justify-content: end;
+    align-items: inherit;
+    font-size: 0.85rem;
+    max-width: var(--max-width);
+    width: 100%;
+    z-index: 2;
+    font-family: var(--font-mono);
+  }
+
+  .descriptionright p {
+    position: relative;
+    margin: 0;
+    padding: 1rem;
+    background-color: rgba(var(--callout-rgb), 0.5);
+    border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+    border-radius: var(--border-radius);
   }
   
   .description a {

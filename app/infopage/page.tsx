@@ -1,95 +1,88 @@
 import Image from "next/image";
-import { Card } from "@/components/card";
-import { Code } from "@/components/code";
-import styles from "./page.module.css";
+import styles from "../page.module.css";
+
 
 function Gradient({
-  conic,
-  className,
-  small,
-}: {
-  small?: boolean;
-  conic?: boolean;
-  className?: string;
-}): JSX.Element {
-  return (
-    <span
-      className={[
-        styles.gradient,
-        conic ? styles.glowConic : undefined,
-        small ? styles.gradientSmall : styles.gradientLarge,
-        className,
-      ]
-        .filter(Boolean)
-        .join(" ")}
-    />
-  );
-}
-const LINKS = [
-  {
-    title: "ACM Manoa",
-    href: "https://acmmanoa.org/",
-    description: "Visit the Official Acm Manoa Website",
-  },
-  {
-    title: "About Kanehekiki",
-    href: "https://acmmanoa.org/",
-    description: "Learn more about Kanehekiki Datathon",
-  },
-  {
-    title: "Pictures",
-    href: "https://acmmanoa.org/",
-    description: "See previous pictures of datathon",
-  },
-  {
-    title: "Sign Up!",
-    href: "https://acmmanoa.org/",
-    description: "Fill out the Eventbrite form and join datathon!",
-  },
-];
-
-export default function Page(): JSX.Element {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          ok&nbsp;
-          <Code className={styles.code}>ok</Code>
-        </p>
-        <div>
-          <a
-            href="https://acmmanoa.org/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-             <p>
-          by&nbsp;
-          <Code className={styles.code}>Acm Manoa</Code>
-        </p>
-            {/* <Image
-              alt="Vercel Logo"
-              height={24}
-              priority
-              src="/acm_Logo_New.png"
-              width={75}
-            /> */}
-          </a>
+    conic,
+    className,
+    small,
+  }: {
+    small?: boolean;
+    conic?: boolean;
+    className?: string;
+  }): JSX.Element {
+    return (
+      <span
+        className={[
+          styles.gradient,
+          conic ? styles.glowConic : undefined,
+          small ? styles.gradientSmall : styles.gradientLarge,
+          className,
+        ]
+          .filter(Boolean)
+          .join(" ")}
+      />
+    );
+  }
+  
+  
+  export default function Page(): JSX.Element {
+    return (
+      <main className={styles.infomain}>
+        <div className={`${styles.turborepoWordmarkContainer} mb-2`}>
+            <h1 className="text-7xl font-bold">Kanehekili Datathon</h1>
+            <h1 className="text-5xl">March 9 to March 10</h1>
         </div>
-      </div>
 
-      <div className={styles.hero}>
-        <div className={styles.heroContent}>
-          <div className={styles.logos}>
-            <div className={styles.circles}>
-              {/* <Image
-                alt="Turborepo"
-                height={614}
-                src="circles.svg"
-                width={614}
-              /> */}
+        <div className="grid grid-cols-2 grid-rows-2 gap-4">
+            <div className="p-4">
+                <div className={styles.description}>
+                    <h1 className="text-5xl">What is Datathon</h1>
+                </div>
+                <div className={styles.description}>
+                    <p>
+                        Datathon, similar to a hackathon, is a weekend-long competition where students collaborate in teams to develop a data science project that solves a problem announced at the event. 
+                        A weekend-long event where students collaborate in teams to develop a data science project that solves a problem presented at the competition.
+                    </p>
             </div>
-            <div className={styles.logoGradientContainer}>
-              <Gradient className={styles.logoGradient} conic small />
+            </div>
+            <div className="p-4"></div>
+            <div className="p-4"></div>
+            <div className="p-4">
+                <div className={`${styles.descriptionright}`}>
+                    <h1 className="text-5xl">What is Kanehekili</h1>
+                </div>
+
+                <div className={styles.descriptionright}>
+                    <p>
+                    Kanehekili is the name of the demi-god of thunder in Hawaiian culture. An example of Kane worship in the name of one of these lesser deities is illustrated in the description given by Kamakau of the place held by Kane-hekili (Kane in the thunder) as an aumakua on the island of Maui. Kane-hekili as god of thunder is associated with Kane-wawahi-lani (Kane breaking through heaven), Ka-uila-nui-maka-keha‘i-i-ka-lani (Lightning flashing in the heavens), Ka-hoali‘i, and other gods whose names suggest the lively phenomena of a thunderstorm.
+                    Kane is one of the four main male gods in Hawaiian culture”
+                    fresh water god
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+      
+       
+       
+        
+        <div className={styles.hero}>
+            <div className={styles.heroContent}>
+                <div className={styles.logos}>
+                    <div className={styles.circles}>
+                        {/* <Image
+                        alt="Turborepo"
+                        height={614}
+                        src="circles.svg"
+                        width={614}
+                        /> */}
+                    </div>
+                <div className={styles.logoGradientContainer}>
+                <Gradient className={styles.logoGradient} conic small />
             </div>
 
             <div className={styles.logo}>
@@ -101,7 +94,8 @@ export default function Page(): JSX.Element {
                 width={180}
               />
             </div>
-          </div>
+
+        </div>
           <Gradient className={styles.backgroundGradient} conic />
           <div className={styles.turborepoWordmarkContainer}>
             {/* <svg
@@ -121,22 +115,9 @@ export default function Page(): JSX.Element {
               <path d="M408.46 33.3111H425.677C437.221 33.3111 444.807 27.7699 444.807 17.2152C444.807 6.59453 437.221 1.05332 425.677 1.05332H395.53V48.4175H408.46V33.3111ZM408.46 22.5585V11.8719H424.951C429.569 11.8719 432.076 13.8509 432.076 17.2152C432.076 20.5135 429.569 22.5585 424.951 22.5585H408.46Z" />
               <path d="M476.899 0.261719C460.341 0.261719 448.401 10.6185 448.401 24.7354C448.401 38.8523 460.341 49.2091 476.899 49.2091C493.456 49.2091 505.33 38.8523 505.33 24.7354C505.33 10.6185 493.456 0.261719 476.899 0.261719ZM476.899 11.4761C485.606 11.4761 492.137 16.6215 492.137 24.7354C492.137 32.8493 485.606 37.9947 476.899 37.9947C468.191 37.9947 461.66 32.8493 461.66 24.7354C461.66 16.6215 468.191 11.4761 476.899 11.4761Z" />
             </svg> */}
-
-            <h1 style={{ color: `#dcf4f5` }} className='font-bold text-4xl flex flex-row'>
-            Kanehekili
-            <div className="text-2xl">Datathon</div>
-            </h1>
           </div>
         </div>
       </div>
-
-      <div className={styles.grid}>
-        {LINKS.map(({ title, href, description }) => (
-          <Card className={styles.card} href={href} key={title} title={title}>
-            {description}
-          </Card>
-        ))}
-      </div>
-    </main>
-  );
-}
+      </main>
+    );
+  }

@@ -49,11 +49,11 @@ function Gradient({
             <div className="p-4"></div>
             <div className="p-4"></div>
             <div className="p-4">
-                <div className={`${styles.descriptionright}`}>
+                <div className={styles.description}>
                     <h1 className="text-5xl">What is Kanehekili</h1>
                 </div>
 
-                <div className={styles.descriptionright}>
+                <div className={styles.description}>
                     <p>
                     Kanehekili is the name of the demi-god of thunder in Hawaiian culture. An example of Kane worship in the name of one of these lesser deities is illustrated in the description given by Kamakau of the place held by Kane-hekili (Kane in the thunder) as an aumakua on the island of Maui. Kane-hekili as god of thunder is associated with Kane-wawahi-lani (Kane breaking through heaven), Ka-uila-nui-maka-keha‘i-i-ka-lani (Lightning flashing in the heavens), Ka-hoali‘i, and other gods whose names suggest the lively phenomena of a thunderstorm.
                     Kane is one of the four main male gods in Hawaiian culture”
@@ -63,32 +63,30 @@ function Gradient({
             </div>
         </div>
 
+      <div className={`${styles.turborepoWordmarkContainer} mb-2`}>
+        <h1 className="text-7xl font-bold">Partners</h1>
+      </div>
 
-
-
-      
-       
-       
-        
-        <div className={styles.hero}>
+      <div className="grid grid-cols-4 grid-rows-1 gap-4">
+        <div className="justify-center items-center">
             <div className={styles.heroContent}>
-                <div className={styles.logos}>
-                    <div className={styles.circles}>
-                        {/* <Image
-                        alt="Turborepo"
-                        height={614}
-                        src="circles.svg"
-                        width={614}
-                        /> */}
-                    </div>
+              <div className={styles.logos}>
+                <div className={styles.circles}>
+                  {/* <Image
+                    alt="Turborepo"
+                    height={614}
+                    src="circles.svg"
+                    width={614}
+                    /> */}
+                </div>
                 <div className={styles.logoGradientContainer}>
-                <Gradient className={styles.logoGradient} conic small />
-            </div>
+                  <Gradient className={styles.logoGradient} conic small />
+                </div>
 
             <div className={styles.logo}>
               <Image
                 alt=""
-                height={180}
+                height={190}
                 priority
                 src="/acm_Logo_New.png"
                 width={180}
@@ -117,6 +115,11 @@ function Gradient({
             </svg> */}
           </div>
         </div>
+      </div>
+
+        <div className="bg-gray-300 p-4">2</div>
+        <div className="bg-gray-400 p-4">3</div>
+        <div className="bg-gray-500 p-4">4</div>
       </div>
       </main>
     );

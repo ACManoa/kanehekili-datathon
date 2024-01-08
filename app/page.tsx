@@ -33,7 +33,7 @@ const LINKS = [
   },
   {
     title: "About Kanehekiki",
-    href: "https://acmmanoa.org/",
+    href: "/infopage",
     description: "Learn more about Kanehekiki Datathon",
   },
   {

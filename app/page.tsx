@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Card } from "@/components/card";
-import { Code } from "@/components/code";
 import styles from "./page.module.css";
+import Header from '../components/Header';
 
 function Gradient({
   conic,
@@ -51,31 +51,9 @@ const LINKS = [
 export default function Page(): JSX.Element {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          ok&nbsp;
-          <Code className={styles.code}>ok</Code>
-        </p>
-        <div>
-          <a
-            href="https://acmmanoa.org/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-             <p>
-          by&nbsp;
-          <Code className={styles.code}>Acm Manoa</Code>
-        </p>
-            {/* <Image
-              alt="Vercel Logo"
-              height={24}
-              priority
-              src="/acm_Logo_New.png"
-              width={75}
-            /> */}
-          </a>
-        </div>
-      </div>
+      <Header />
+      
+      
 
       <div className={styles.hero}>
         <div className={styles.heroContent}>

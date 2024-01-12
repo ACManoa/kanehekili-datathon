@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import { AnimatePresence } from 'framer-motion';
 import Nav from './nav';
 import gsap from 'gsap';
-import Link from 'next/link';
+import {Link} from 'react-scroll'
 import { useRouter } from 'next/navigation';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Rounded from '../../common/RoundedButton';
@@ -59,8 +59,7 @@ export default function Index() {
                 <div className='hidden sm:flex'>
                 <Magnetic>
                     <div className={styles.el} >
-                        
-                        <a href='https://acmmanoa.org/'>About Event</a>
+                    <Link activeClass="active" to="title" spy={true} smooth={true} offset={50} duration={500} >About Event</Link>
                         <div className={styles.indicator}></div>
                     </div>
                 </Magnetic>
@@ -74,7 +73,7 @@ export default function Index() {
 
                 <Magnetic>
                     <div className={styles.el}>
-                        <a href={`https://acmmanoa.org/`}>Partner</a>
+                    <Link activeClass="active" to="partner" spy={true} smooth={true} offset={50} duration={500} >Partner</Link>
                         <div className={styles.indicator}></div>
                     </div>
                 </Magnetic>

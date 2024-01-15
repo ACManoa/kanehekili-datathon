@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Card } from "@/components/card";
-import { Code } from "@/components/code";
+import { Card } from "@/components/ui/card";
+import { Code } from "@/components/ui/code";
 import styles from "./page.module.css";
 
 function Gradient({

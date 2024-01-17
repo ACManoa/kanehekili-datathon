@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { Card } from "@/components/ui/card";
+import { Code } from "@/components/ui/code";
 import styles from "./page.module.css";
 import Header from "../components/Header";
 
